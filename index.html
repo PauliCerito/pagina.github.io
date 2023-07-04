@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Planilla caso de uso 1</title>
+        <link rel="stylesheet" href="uno.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Planilla caso de uso 1: Hacer consulta</h1>
+        </header>
+        <section>
+            <p class="primero">
+                
+            </p>
+
+            <table>
+                <tr>
+                    <td colspan="2" class="centrado">Caso de uso</td>
+                    <td>Hacer consulta</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Identificador</td>
+                    <td>CU001</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Actores</td>
+                    <td>Usuario registrado / no registrado</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Tipo</td>
+                    <td>Primario</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Referencias</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Precondiciones</td>
+                    <td>Ninguna</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Postcondiciones</td>
+                    <td>Ni idea</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Descripción</td>
+                    <td>El usuario entra a la primera interfaz para poder realizar la consulta</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="centrado">Resumen</td>
+                    <td>----</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="alCostado">Flujo normal</td>
+                </tr>
+                <tr>
+                    <td>Nro</td>
+                    <td>Actor</td>
+                    <td>Sistema</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Entra al sitio web</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>Muestra el chat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>Aparece un pop up, inhabilitando todas las otras funciones a excepción de los botones “Iniciar sesión” y “Registrarse”, que muestra las categorías a seleccionar:<br>
+                        -	Cocina<br>
+                        -	Plomería<br>
+                        -	Electricidad<br>
+                        Cada uno con un color e icono que los represente
+                        </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Elige una de las categorías</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td>Cierra el pop up</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td></td>
+                    <td>Habilita el chat</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Hace la pregunta</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td></td>
+                    <td>Confirma si la pregunta está relacionada con la categoría</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td></td>
+                    <td>Si la pregunta no está relacionada con la categoría, entonces se le muestra un mensaje “No podemos responder esa pregunta, haz otra ☹”. Si la pregunta está relacionada entonces pasa al paso 10</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td>Envía la solicitud a la API de OpenAI para que el modelo responda la pregunta</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td></td>
+                    <td>La API devuelve una respuesta</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td></td>
+                    <td>Procesa los resultados</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td></td>
+                    <td>Muestra en el chat la respuesta</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td>Vuelve al punto 4</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="alCostado">Flujo alternativo</td>  
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td>Envía la solicitud a la API de OpenAI para que el modelo responda la pregunta</td>
+                </tr>
+                <tr>
+                    <td>10.1</td>
+                    <td></td>
+                    <td>Fallo en el recibimiento de la petición a la API de OpenAI </td>
+                </tr>
+                <tr>
+                    <td>10.1.1</td>
+                    <td></td>
+                    <td>Se muestra mensaje “Intente más tarde”</td>
+                </tr>
+            </table>
+
+        </section>
+        <footer></footer>
+
+    </body>
+</html>
